@@ -3,7 +3,7 @@
 html,
 body,
 .out
-	min-height: 1256px
+	min-height: 100%
 
 
 body
@@ -71,10 +71,19 @@ img
 			text-transform: uppercase
 			margin-bottom: 22px
 		&-content
-			background: url(../img/layer.png)center no-repeat
-			margin-top: -130px
-			padding-top: 130px
-			min-height: 414px
+			position: relative
+			&:before
+				content: ''
+				display: block
+				z-index: -1
+				position: absolute
+				min-height: 360px
+				background: url(../img/layer.png)center no-repeat
+				top: -140px
+				left: 0
+				right: 0
+				margin: auto
+				opacity: 0.7	
 			span
 				font: 400 24px/1 "Bebas Regular", Arial, sans-serif
 				text-transform: uppercase

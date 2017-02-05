@@ -6,7 +6,7 @@ $(document).ready(function() {
 			overlay = $('.js-overlay'),
 			popup 	= $('.js-popup'),
 			body 	= $('body'),
-			close 	= $('.js-close');
+			close 	= $('.js-back');
 	
 		function addClasses(el1, el2, el3) {
 			el1.add(el2).addClass('is-active');
