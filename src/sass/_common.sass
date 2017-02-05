@@ -1,0 +1,95 @@
+
+
+html,
+body,
+.out
+	min-height: 1256px
+
+
+body
+	font-family: "Bebas Regular", Arial, sans-serif
+	font-size: 24px
+	line-height: 1
+	background: url(../img/main-bg.jpg)center no-repeat
+	+cover
+	&.is-hidden
+		overflow: hidden
+img
+	max-width: 100%
+	display: block
+	margin: 0 auto
+
+%inner
+	width: 100%
+	max-width: 1090px
+	margin: 0 auto
+	position: relative
+	height: 100%
+	+clr
+
+.inner
+	@extend %inner
+
+// LINE
+.line
+	position: absolute
+	left: 0
+	right: 0
+	top: 647px
+	margin: auto
+	background: url(../img/line.png)center no-repeat
+	z-index: 10
+	height: 21px
+	max-width: 1106px
+	background-size: cover
+// TITLE
+.title-primary
+	color: white
+	font: 400 48px "Evogria Regular", Arial, sans-serif
+	margin-bottom: 61px
+
+// common blocks
+// START UNIT
+.unit
+	color: white
+	text-align: center
+	padding: 168px 0 144px 0
+	position: relative
+	&__list
+		font-size: 0
+		color: white
+		margin: 0
+		&-item
+			vertical-align: top
+			display: inline-block
+			width: 24%
+			max-width: 239px
+			&:not(:last-child)
+				margin-right: 4%
+		&-title
+			font: 400 36px "Bebas Regular", Arial, sans-serif
+			text-transform: uppercase
+			margin-bottom: 22px
+		&-content
+			background: url(../img/layer.png)center no-repeat
+			margin-top: -130px
+			padding-top: 130px
+			min-height: 414px
+			span
+				font: 400 24px/1 "Bebas Regular", Arial, sans-serif
+				text-transform: uppercase
+			.new__price
+				font-size: 60px
+				margin-right: 6px
+			.old__price
+				text-decoration: line-through
+				position: relative
+				top: -27px
+		&-disc
+			margin: 40px 0 18px 0
+		&-price
+			margin-bottom: 20px
+
+// END
+
+

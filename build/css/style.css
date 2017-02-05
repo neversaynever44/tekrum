@@ -1,0 +1,108 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
+
+body, html { height: 100%; }
+
+img, fieldset, a img { border: none; }
+
+input[type="text"], input[type="email"], input[type="tel"], textarea { -webkit-appearance: none; }
+
+textarea { overflow: auto; }
+
+input, button { margin: 0; padding: 0; border: 0; }
+
+input[type="submit"], button { cursor: pointer; }
+
+div, input, textarea, select, button, h1, h2, h3, h4, h5, h6, a, span, a:focus { outline: none; }
+
+ul, ol { list-style-type: none; }
+table { border-spacing: 0; border-collapse: collapse; width: 100%; }
+
+html { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+*, *:before, *:after { -webkit-box-sizing: inherit; box-sizing: inherit; }
+
+@font-face { font-family: "svgfont"; src: url("fonts/svgfont.eot"); src: url("fonts/svgfont.eot?#iefix") format("eot"), url("fonts/svgfont.woff") format("woff"), url("fonts/svgfont.woff2") format("woff2"), url("fonts/svgfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+.icon, [class^="icon-"], [class*=" icon-"] { font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.icon, [class^="icon-"], [class*=" icon-"] { display: inline-block; }
+
+.icon-sepa:before { content: ""; }
+
+.icon-skrill:before { content: ""; }
+
+html, body, .out { min-height: 1256px; }
+
+body { font-family: "Bebas Regular", Arial, sans-serif; font-size: 24px; line-height: 1; background: url(../img/main-bg.jpg) center no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+body.is-hidden { overflow: hidden; }
+
+img { max-width: 100%; display: block; margin: 0 auto; }
+
+.inner { width: 100%; max-width: 1090px; margin: 0 auto; position: relative; height: 100%; *zoom: 1; }
+.inner:after { content: " "; display: table; clear: both; }
+
+.line { position: absolute; left: 0; right: 0; top: 647px; margin: auto; background: url(../img/line.png) center no-repeat; z-index: 10; height: 21px; max-width: 1106px; background-size: cover; }
+
+.title-primary { color: white; font: 400 48px "Evogria Regular", Arial, sans-serif; margin-bottom: 61px; }
+
+.unit { color: white; text-align: center; padding: 168px 0 144px 0; position: relative; }
+.unit__list { font-size: 0; color: white; margin: 0; }
+.unit__list-item { vertical-align: top; display: inline-block; width: 24%; max-width: 239px; }
+.unit__list-item:not(:last-child) { margin-right: 4%; }
+.unit__list-title { font: 400 36px "Bebas Regular", Arial, sans-serif; text-transform: uppercase; margin-bottom: 22px; }
+.unit__list-content { background: url(../img/layer.png) center no-repeat; margin-top: -130px; padding-top: 130px; min-height: 414px; }
+.unit__list-content span { font: 400 24px/1 "Bebas Regular", Arial, sans-serif; text-transform: uppercase; }
+.unit__list-content .new__price { font-size: 60px; margin-right: 6px; }
+.unit__list-content .old__price { text-decoration: line-through; position: relative; top: -27px; }
+.unit__list-disc { margin: 40px 0 18px 0; }
+.unit__list-price { margin-bottom: 20px; }
+
+@font-face { font-family: "Bebas Regular"; src: url("fonts/bebasneue_regular.eot"); src: url("fonts/bebasneue_regular.eot?#iefix") format("embedded-opentype"), url("fonts/bebasneue_regular.woff2") format("woff2"), url("fonts/bebasneue_regular.woff") format("woff"), url("fonts/bebasneue_regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "Evogria Regular"; src: url("fonts/evogria.eot"); src: url("fonts/evogria.eot?#iefix") format("embedded-opentype"), url("fonts/evogria.woff2") format("woff2"), url("fonts/evogria.woff") format("woff"), url("fonts/evogria.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "Gilroy Light"; src: url("fonts/gilroy-light.eot"); src: url("fonts/gilroy-light.eot?#iefix") format("embedded-opentype"), url("fonts/gilroy-light.woff2") format("woff2"), url("fonts/gilroy-light.woff") format("woff"), url("fonts/gilroy-light.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "Gilroy Extrabold"; src: url("fonts/gilroy-extrabold.eot"); src: url("fonts/gilroy-extrabold.eot?#iefix") format("embedded-opentype"), url("fonts/gilroy-extrabold.woff2") format("woff2"), url("fonts/gilroy-extrabold.woff") format("woff"), url("fonts/gilroy-extrabold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+.btn { font: 700 18px "Gilroy Extrabold", Arial, sans-serif; color: white; text-transform: uppercase; background-color: #faa21b; border-radius: 5px; padding: 23px 54px; text-decoration: none; text-align: center; display: block; -webkit-transition: background-color 0.25s ease; transition: background-color 0.25s ease; }
+.btn:hover { background-color: #323232; }
+
+.btn-cart { display: inline-block; vertical-align: top; width: 67px; height: 51px; margin-right: -28px; border: 3px solid white; border-radius: 23px; background: transparent; -webkit-transition: background 0.2s ease-in-out, border-color 0.2s ease-in-out; transition: background 0.2s ease-in-out, border-color 0.2s ease-in-out; }
+.btn-cart:hover { background: #ff8b24; border-color: #ff8b24; }
+
+.icon { vertical-align: top; -webkit-transition: opacity 0.25s ease, fill 0.25s ease, color 0.25s ease; transition: opacity 0.25s ease, fill 0.25s ease, color 0.25s ease; }
+
+.popup-close .icon-arrow { position: absolute; top: 50%; margin-top: -16px; left: 0; }
+
+.icon-arrow { fill: #fff; font-size: 32px; line-height: 1; width: 0.62em; height: 1em; }
+
+.icon-cart { width: 1em; height: 1em; fill: #fff; }
+
+.icon-cart { fill: #fff; font-size: 24px; line-height: 1; }
+
+.overlay { position: fixed; z-index: 100; top: 0; left: 0; right: 0; bottom: 0; opacity: 0; visibility: hidden; background: rgba(0, 0, 0, 0.77); -webkit-transition: opacity 0.25s ease, visibility 0.25s ease; transition: opacity 0.25s ease, visibility 0.25s ease; }
+.overlay.is-active { opacity: 1; visibility: visible; }
+
+.popup { position: fixed; top: 0; right: 0; bottom: 0; z-index: 200; overflow-x: hidden; overflow-y: auto; background: #fff; -webkit-transition: -webkit-transform 0.25s ease-in-out; transition: -webkit-transform 0.25s ease-in-out; transition: transform 0.25s ease-in-out; -webkit-transition: -webkit-transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out; transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out; -webkit-transform: translate3d(100%, 0, 0); transform: translate3d(100%, 0, 0); }
+.popup.is-active { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+.popup__inner { width: 470px; }
+.popup__header { height: 225px; background-color: rgba(255, 114, 0, 0.76); text-align: center; font-size: 0; }
+.popup__header:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.popup__body { padding: 0 75px 40px 60px; color: #2f2f2f; font: 400 18px "Gilroy Light", Arial, sans-serif; }
+.popup__footer { padding: 20px 85px; }
+.popup__total { padding: 0 60px 37px 62px; font: 400 30px/1 "Gilroy Light", Arial, sans-serif; color: #2b2b2b; border-bottom: 1px solid rgba(0, 0, 0, 0.15); text-transform: uppercase; }
+.popup__total span { font-size: 48px; }
+.popup__list { line-height: 1; }
+.popup__list-item { border-bottom: 1px solid rgba(0, 0, 0, 0.15); padding: 33px 0 21px; position: relative; }
+.popup__list-pic { width: 63px; height: 113px; position: absolute; top: 37px; left: 0; }
+.popup__list-content { padding-left: 100px; }
+.popup__list-price { font: 400 24px "Gilroy Extrabold", Arial, sans-serif; }
+.popup__list-title, .popup__list-meta { margin-bottom: 15px; }
+
+.select { position: relative; line-height: 1; display: inline-block; vertical-align: top; margin-right: 22px; width: 61px; text-align: left; border-bottom: 3px solid #fff; }
+
+.popup-close { display: inline-block; }
+.popup-close__text { display: inline-block; vertical-align: middle; position: relative; padding-left: 100px; margin-left: -100px; color: #fff; font: 400 60px/1 "Bebas Regular", Arial, sans-serif; }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+ *{ -webkit-text-size-adjust: none; } }
+
+
+
+/*# sourceMappingURL=style.css.map */
