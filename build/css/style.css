@@ -97,7 +97,7 @@ img { max-width: 100%; display: block; margin: 0 auto; }
 
 .popup-back { text-align: center; font-size: 0; height: 100%; display: block; }
 .popup-back:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
-.popup-back__text { display: inline-block; vertical-align: middle; position: relative; padding-left: 100px; margin-left: -100px; color: #fff; font: 400 60px/1 "Bebas Regular", Arial, sans-serif; }
+.popup-back span { display: inline-block; vertical-align: middle; position: relative; padding-left: 100px; margin-left: -100px; color: #fff; font: 400 60px/1 "Bebas Regular", Arial, sans-serif; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
 
