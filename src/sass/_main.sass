@@ -134,7 +134,7 @@
 	text-align: left
 	border-bottom: 3px solid #fff
 	height:	50px
-	&__list
+	&__content
 		display: none
 		position: absolute
 		width: 122px
@@ -144,11 +144,41 @@
 		margin-top: 3px
 		padding: 0 14px
 		z-index: 1
-		&-item
-			a
-				font: 400 24px/1 "Bebas Regular", Arial, sans-serif
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			background-color: #000
+			opacity: 0.2
+			box-shadow: 0 0 10px #000
+			z-index: -1
+	&__list
+		height: 100%
+		overflow-x: hidden
+		overflow-y: auto
+	&__item
+		padding-top: 14px
+		a
+			font: 400 24px/1 "Bebas Regular", Arial, sans-serif
+			display: inline-block
+			text-decoration: none
+			color: white
+			padding: 8px
+			background-color: transparent
+			border-radius: 5px
+			opacity: 1
+			+tr(.4s)
+			&:hover
+				background-color: #a33c5b
+				border-radius: 5px
+
+
 .selectbox
-	padding: 10px 14px
+	padding: 16px 10px
 	display: block
 	position: relative
 	cursor: pointer
@@ -178,3 +208,46 @@
 		margin-left: -100px
 		color: #fff
 		font: 400 60px/1 "Bebas Regular", Arial, sans-serif
+
+// dropdown
+
+.dropdown__wrapper
+	width: 100px
+	height: 200px
+	overflow: hidden
+	margin-left: 53px	
+.dropdown__btn
+	width: 68px
+	height: 51px
+	position: relative
+	margin-left: 38px
+	top: -196px
+	left: 90px
+
+::-webkit-scrollbar-button
+	background-image:url('')
+	background-repeat:no-repeat
+	width: 5px
+	height: 0px
+
+::-webkit-scrollbar-track
+	background-color:transparent
+
+
+::-webkit-scrollbar-thumb
+	-webkit-border-radius: 0px
+	border-radius: 0px
+	background-color: #923f5c
+
+::-webkit-scrollbar-thumb
+	&:hover
+		background-color: #923f5c
+
+::-webkit-resizer
+	background-image:url('')
+	background-repeat:no-repeat
+	width: 2px
+	height: 0px
+
+::-webkit-scrollbar
+	width: 4px

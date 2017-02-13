@@ -1,0 +1,243 @@
+/* --- EASYDROPDOWN DEFAULT THEME --- */
+
+/* PREFIXED CSS */
+
+.dropdown,
+.dropdown div,
+.dropdown li,
+.dropdown div::after{
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+
+.dropdown .selected::after,
+.dropdown.scrollable div::after{
+	-webkit-pointer-events: none;
+	-moz-pointer-events: none;
+	-ms-pointer-events: none;
+	pointer-events: none;
+}
+
+/* WRAPPER */
+
+.dropdown{
+	position: relative;
+	width: 160px;
+	/*border: 1px solid #ccc;*/
+	cursor: pointer;
+	/*background: #fff;*/
+
+	border-radius: 3px;
+	
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+background: transparent;
+    border: none;
+    font-size: 24px;
+    width: 70px;
+    height: 50px;
+}
+
+.dropdown.open{
+	z-index: 2;
+}
+
+.dropdown:hover{
+	/*box-shadow: 0 0 5px rgba(0,0,0,.15);*/
+}
+
+.dropdown.focus{
+	/*box-shadow: 0 0 5px rgba(51,102,248,.4);*/
+}
+
+/* CARAT */
+
+.dropdown .carat{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    right: 18px;
+    top: 50%;
+    margin-top: -3px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 7px 6px 0 6px;
+    border-color: #fff transparent transparent transparent;
+}
+
+
+.dropdown.disabled .carat{
+	border-top-color: white;
+}
+
+/* OLD SELECT (HIDDEN) */
+
+.dropdown .old{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+}
+
+.dropdown select{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.dropdown.touch .old{
+	width: 100%;
+	height: 100%;
+}
+
+.dropdown.touch select{
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+/* SELECTED FEEDBACK ITEM */ 
+
+.dropdown .selected,
+.dropdown li{
+	display: block;
+	font-size: 18px;
+	line-height: 1;
+	/*color: #000;*/
+	/*background:#b64d6f;*/
+	color: white;
+	padding: 9px 12px;
+	overflow: hidden;
+	white-space: nowrap;
+font: 400 24px/1 "Bebas Regular", Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.dropdown.disabled .selected{
+	color: #999;
+}
+
+.dropdown .selected {
+	    position: relative;
+    line-height: 1;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 22px;
+    width: 61px;
+    text-align: left;
+    border-bottom: 3px solid #fff;
+    height: 50px;
+    padding: 18px!important;
+}
+
+/* DROP DOWN WRAPPER */
+
+.dropdown div{
+	position: absolute;
+	height: 0;
+	left: -1px;
+	right: -1px;
+	top: 100%;
+	margin-top: -1px;
+	/*background: #fff;*/
+	background: transparent;
+	/*border: 1px solid #ccc;*/
+	border:none;
+	/*border-top: 1px solid #eee;*/
+	border-radius: 0 0 3px 3px;
+	overflow: hidden;
+	opacity: 0;
+}
+
+.dropdown ul {
+	    position: absolute;
+    width: 122px;
+    height: 187px;
+    left: -37px;
+    top: 100%;
+    margin-top: 3px;
+    padding: 0 14px;
+    z-index: 1;
+}
+/* Height is adjusted by JS on open */
+
+.dropdown.open div{
+	opacity: 1;
+	z-index: 2;
+	height: 190px!important;
+}
+.dropdown div:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.2;
+    -webkit-box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 10px #000;
+    z-index: -1;
+}
+
+/* FADE OVERLAY FOR SCROLLING LISTS */
+
+.dropdown.scrollable div::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 50px;
+	
+	/*box-shadow: inset 0 -50px 30px -35px #fff;*/
+}
+
+.dropdown.scrollable.bottom div::after{
+	opacity: 0;
+}
+
+/* DROP DOWN LIST */
+
+.dropdown ul{
+	position: absolute;
+	left: 0;
+	top: 0;
+height: 174px;
+	width: 100%;
+	list-style: none;
+	overflow: scroll;
+}
+
+.dropdown.scrollable.open ul{
+	overflow-y: auto;
+}
+
+/* DROP DOWN LIST ITEMS */
+
+.dropdown li{
+	list-style: none;
+	padding: 8px 12px;
+	border-radius: 5px;
+}
+
+/* .focus class is also added on hover */
+
+.dropdown li.focus{
+	background-color: #a33c5b;
+	position: relative;
+	z-index: 3;
+	border-radius: 5px;
+	/*color: #fff;*/
+}
+
+.dropdown li.active{
+	font-weight: 700;
+}
