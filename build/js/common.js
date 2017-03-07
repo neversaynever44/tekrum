@@ -12,5 +12,17 @@ $(document).ready(function() {
 		$('body').removeClass('is-hidden');
 	});
 
+	//Click on document
+	$(document).click(function(e) {
+		var allDocExeptPopupAndCart = !$(e.target).closest('.js-popup').length && 
+									  !$(e.target).closest('.js-cart').length;
+	
+	
+		if (allDocExeptPopupAndCart) {
+			$('.js-popup').add('.js-overlay')
+						  .removeClass('is-active');
+			$('body').removeClass('is-hidden');
+		}
+	});
 });
 
